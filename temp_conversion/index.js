@@ -5,7 +5,7 @@ let result = document.getElementById("result");
 let temp; 
 
 function convert(){
-    event.preventDefault();
+    event.preventDefault(); //prevents form submission!
     if (toFahrenheit.checked) {
         temp = Number(textBox.value);
         temp = temp * 9/5 + 32;
