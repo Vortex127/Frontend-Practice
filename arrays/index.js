@@ -39,22 +39,55 @@ let fruits = ["apple", "orange", "banana", "mango"];
 //     return Math.pow(element,3)
 // }
 
-const students = ["Asad", "Tahir", "Kaiser", "Hamza", "Usman"]
-const upper = students.map(upperCase)
-const lower = students.map(lowerCase)
-const capital = students.map(capitalize)
-console.log(...upper);
-console.log(...lower);
-console.log(...capital);
+// const students = ["Asad", "Tahir", "Kaiser", "Hamza", "Usman"]
+// const upper = students.map(upperCase)
+// const lower = students.map(lowerCase)
+// const capital = students.map(capitalize)
+// console.log(...upper);
+// console.log(...lower);
+// console.log(...capital);
 
-function upperCase(element){
-    return element.toUpperCase();
+// function upperCase(element){
+//     return element.toUpperCase();
+// }
+
+// function lowerCase(element){
+//     return element.toLowerCase();
+// }
+
+// function capitalize(element){
+//     return element.charAt(0).toUpperCase() + element.slice(1).toLowerCase();
+// }
+
+
+// .filter() creates a new array with elements that pass the test in a function (uses callbacks)
+
+
+// let numbers = [1, 2, 3, 4, 5];
+// let even = numbers.filter(isEven);
+// console.log(...even);
+// let odd = numbers.filter(isOdd);
+// console.log(...odd);
+
+// function isEven(element) {
+//     return element%2 === 0;
+// }
+
+// function isOdd(element){
+//     return element%2 !== 0;
+// }
+
+const ages = [20, 30, 40, 50, 60, 70, 80, 90, 100];
+const kid = ages.filter(isChild);
+const adult = ages.filter(isAdult);
+
+console.log(...kid);
+console.log(...adult);
+
+function isAdult(element){
+    return element >= 18;
 }
 
-function lowerCase(element){
-    return element.toLowerCase();
-}
-
-function capitalize(element){
-    return element.charAt(0).toUpperCase() + element.slice(1).toLowerCase();
+function isChild(element){
+    return element < 18;
 }
