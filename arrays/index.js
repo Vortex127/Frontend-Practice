@@ -77,17 +77,56 @@ let fruits = ["apple", "orange", "banana", "mango"];
 //     return element%2 !== 0;
 // }
 
-const ages = [20, 30, 40, 50, 60, 70, 80, 90, 100];
-const kid = ages.filter(isChild);
-const adult = ages.filter(isAdult);
+// const ages = [20, 30, 40, 50, 60, 70, 80, 90, 100];
+// const kid = ages.filter(isChild);
+// const adult = ages.filter(isAdult);
 
-console.log(...kid);
-console.log(...adult);
+// console.log(...kid);
+// console.log(...adult);
 
-function isAdult(element){
-    return element >= 18;
+// function isAdult(element){
+//     return element >= 18;
+// }
+
+// function isChild(element){
+//     return element < 18;
+// }
+
+
+// .reduce() reduces an array to a single value
+
+//example 1:
+
+
+// const prices = [10, 20, 30, 40, 50];
+// const total = prices.reduce(getTotal);
+// console.log(`The total is $${total.toFixed(2)}`); //toFixed(2) will round the number to 2 decimal places allowing us to see cents as well in the total amount.
+// function getTotal(total, element){
+//     return total + element;
+// }
+
+// function getTotal(previous, next){ //prev = 0 & next = 10;
+//     return previous + next;
+// }
+//then prev = 10 & next = 20;
+//then prev = 30 & next = 30;
+//then prev = 60 & next = 40;
+//then prev = 100 & next = 50;
+//then prev = 150 & next = 0;//because there is no next element in the array so it returns 150 as the total.
+
+
+//example 2:
+
+const grades =[75, 50, 90, 80, 65, 95]
+const maximum = grades.reduce(getMax);
+const minimum = grades.reduce(getMin);
+console.log(maximum);
+console.log(minimum);
+
+function getMax(max, element){
+    return Math.max(max, element);
 }
 
-function isChild(element){
-    return element < 18;
+function getMin(min, element){
+    return Math.min(min, element);
 }
