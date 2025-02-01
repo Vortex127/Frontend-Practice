@@ -51,39 +51,67 @@
 // }
 // hello();
 
-setTimeout(function(){
-    console.log("Hellow");
-}, 3000) // example of function expression
+// setTimeout(function(){
+//     console.log("Hellow");
+// }, 3000) // example of function expression
 
-//instead of using callbacks like we did earlier in map function, we can straight up pass the function:
+// //instead of using callbacks like we did earlier in map function, we can straight up pass the function:
+
+// const numbers = [1,2,3,4,5,6];
+// const square = numbers.map(function(element){
+//     return Math.pow(element,2);
+// });
+// const cube = numbers.map(function(element){
+//     return Math.pow(element,3);
+// });
+// const even = numbers.filter(function(element){
+//     return element % 2 == 0;
+// });
+// const odd = numbers.filter(function(element){
+//     return element % 2 == 1;
+// });
+// const total = numbers.reduce(function(accumulator, element){
+//     return accumulator + element;
+// });
+
+// console.log(...square);
+// console.log("\n");
+// console.log(...cube);
+// console.log("\n");
+// console.log(...even);
+// console.log("\n");
+// console.log(...odd);
+// console.log("\n");
+// console.log(total);
+
+
+
+// arrow functions below. arrow funcs are a way of writing functions in a more concise way.
+
+// const hello = (name) => {
+//     console.log(`Hello ${name}`);
+//     console.log("You are old");
+// }
+// hello("Bro");
+
+// setTimeout(() => console.log("Hello")
+// , 3000);
 
 const numbers = [1,2,3,4,5,6];
-const square = numbers.map(function(element){
-    return Math.pow(element,2);
-});
-const cube = numbers.map(function(element){
-    return Math.pow(element,3);
-});
-const even = numbers.filter(function(element){
-    return element % 2 == 0;
-});
-const odd = numbers.filter(function(element){
-    return element % 2 == 1;
-});
-const total = numbers.reduce(function(accumulator, element){
-    return accumulator + element;
-});
 
-console.log(...square);
-console.log("\n");
-console.log(...cube);
-console.log("\n");
-console.log(...even);
-console.log("\n");
-console.log(...odd);
-console.log("\n");
+const squares = numbers.map((element)=> Math.pow
+(element,2));
+const cube = numbers.map((element)=> Math.pow
+(element,3));
+const even = numbers.filter((element)=> element % 2 == 0);
+const odd = numbers.filter((element)=> element % 2 == 1);
+const total = numbers.reduce((accumulator, element)=> accumulator + element);
+
+
+console.log(squares);
+console.log(cube);
+console.log(even);
+console.log(odd);
 console.log(total);
-
-
 
 
