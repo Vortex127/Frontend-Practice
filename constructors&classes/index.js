@@ -92,40 +92,91 @@
 //     }
 // }
 
-// // const meth = new MathUtil(); no need for this as static keyword is used.
+// const meth = new MathUtil(); no need for this as static keyword is used.
 // console.log(MathUtil.PI); 
 // console.log(MathUtil.getDiameter(5.7896).toFixed(2));
 // console.log(MathUtil.getCircumference(5.7896).toFixed(2));
 // console.log(MathUtil.getArea(9.76).toFixed(2));
 
 
-class User {
-    static userCount = 0;
+// class User {
+//     static userCount = 0;
     
-    constructor(username){
-        this.username = username;
-        User.userCount++;
-    }
+//     constructor(username){
+//         this.username = username;
+//         User.userCount++;
+//     }
 
-    sayHello(){
-        console.log(`Hello, my username is ${this.username}`);
-    }
+//     sayHello(){
+//         console.log(`Hello, my username is ${this.username}`);
+//     }
 
-    static getUserCount(){
-        console.log(`There are ${User.userCount} users online`);
+//     static getUserCount(){
+//         console.log(`There are ${User.userCount} users online`);
         
+//     }
+// }
+// const user1 = new User("Vortex");
+// const user2 = new User("Asfand");
+// const user3 = new User("Booster")
+
+// user1.sayHello();
+// user2.sayHello();
+// user3.sayHello();
+// User.getUserCount();
+
+
+
+// concept of inheritance below:
+
+class Animal{
+    alive = true;
+
+    eat(){
+        console.log(`This ${this.name} is eating`);
+    }
+    sleep(){
+        console.log(`This ${this.name} is sleeping`);
     }
 }
-const user1 = new User("Vortex");
-const user2 = new User("Asfand");
-const user3 = new User("Booster")
 
-user1.sayHello();
-user2.sayHello();
-user3.sayHello();
-User.getUserCount();
+class Rabbit extends Animal{
+    name = "Rabbit";
 
+    run(){
+        console.log(`This ${this.name} is running`);        
+    }
+}
+class Fish extends Animal{
+    name = "Fish";
 
+    swim(){
+        console.log(`This ${this.name} is swimming`);
+    }
+}
+class Hawk extends Animal{
+    name = "Hawk";
+
+    fly(){
+        console.log(`This ${this.name} is flying`);
+    }
+}
+
+const rabbit = new Rabbit();
+const fish = new Fish();
+const hawk = new Hawk();
+
+fish.eat();
+fish.sleep();
+fish.swim();
+console.log("\n");
+rabbit.eat();
+rabbit.sleep();
+rabbit.run();
+console.log("\n");
+hawk.eat();
+hawk.sleep();
+hawk.fly();
 
 
 
