@@ -183,72 +183,77 @@
 
 //the code below talks about how the super keyword can be used for code reusbality.
 
-class Animal{
-    constructor(name, age){
-        this.name = name;
-        this.age = age;
-    }
+// class Animal{
+//     constructor(name, age){
+//         this.name = name;
+//         this.age = age;
+//     }
 
-    move(speed){
-        console.log(`This ${this.name} moves at a speed of ${speed}mph`);
-    }
-}
+//     move(speed){
+//         console.log(`This ${this.name} moves at a speed of ${speed}mph`);
+//     }
+// }
 
-class Rabbit extends Animal{
+// class Rabbit extends Animal{
 
-    constructor(name, age, runSpeed){
-        super(name, age);
-        this.runSpeed = runSpeed;
-    }
+//     constructor(name, age, runSpeed){
+//         super(name, age);
+//         this.runSpeed = runSpeed;
+//     }
 
-    run(){
-        console.log(`This ${this.name} can run`);
-        super.move(this.runSpeed);
-    }
-}
-class Fish extends Animal{
+//     run(){
+//         console.log(`This ${this.name} can run`);
+//         super.move(this.runSpeed);
+//     }
+// }
+// class Fish extends Animal{
 
-    constructor(name, age, swimSpeed){
-        super(name, age);
-        this.swimSpeed = swimSpeed;
-    }
+//     constructor(name, age, swimSpeed){
+//         super(name, age);
+//         this.swimSpeed = swimSpeed;
+//     }
   
-    swim(){
-        console.log(`This ${this.name} can swim`);
-        super.move(this.swimSpeed);
-    }
-}
-class Hawk extends Animal{
+//     swim(){
+//         console.log(`This ${this.name} can swim`);
+//         super.move(this.swimSpeed);
+//     }
+// }
+// class Hawk extends Animal{
   
-    constructor(name, age, flySpeed){
-        super(name, age);
-        this.flySpeed = flySpeed;
-    }
+//     constructor(name, age, flySpeed){
+//         super(name, age);
+//         this.flySpeed = flySpeed;
+//     }
   
-    fly(){
-        console.log(`This ${this.name} can fly`);
-        super.move(this.flySpeed);
-    }
-}
+//     fly(){
+//         console.log(`This ${this.name} can fly`);
+//         super.move(this.flySpeed);
+//     }
+// }
 
-const rabbit = new Rabbit("Rabbit", 2, 10);
-const fish = new Fish("Fish", 1, 5);
-const hawk = new Hawk("Hawk", 1, 7);
+// const rabbit = new Rabbit("Rabbit", 2, 10);
+// const fish = new Fish("Fish", 1, 5);
+// const hawk = new Hawk("Hawk", 1, 7);
 
-console.log(rabbit.name);
-console.log(rabbit.age);
-console.log(rabbit.runSpeed);
-rabbit.run();
-console.log("\n");
-console.log(fish.name);
-console.log(fish.age);
-console.log(fish.swimSpeed);
-fish.swim();
-console.log("\n");
-console.log(hawk.name);
-console.log(hawk.age);
-console.log(hawk.flySpeed);
-hawk.fly();
+// console.log(rabbit.name);
+// console.log(rabbit.age);
+// console.log(rabbit.runSpeed);
+// rabbit.run();
+// console.log("\n");
+// console.log(fish.name);
+// console.log(fish.age);
+// console.log(fish.swimSpeed);
+// fish.swim();
+// console.log("\n");
+// console.log(hawk.name);
+// console.log(hawk.age);
+// console.log(hawk.flySpeed);
+// hawk.fly();
+
+
+// getters & setters are used to access and modify the properties of an object.
+
+
 
 
 
