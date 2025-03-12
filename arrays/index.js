@@ -1,4 +1,4 @@
-let fruits = ["apple", "orange", "banana", "mango"];
+// let fruits = ["apple", "orange", "banana", "mango"];
 // fruits.push("mango"); //adds the element to the end of the array
 // fruits.pop(); //removes the last element from the array
 // fruits.unshift("grapes") //adds the element to the beginning of the array
@@ -117,16 +117,52 @@ let fruits = ["apple", "orange", "banana", "mango"];
 
 //example 2:
 
-const grades =[75, 50, 90, 80, 65, 95]
-const maximum = grades.reduce(getMax);
-const minimum = grades.reduce(getMin);
-console.log(maximum);
-console.log(minimum);
+// const grades =[75, 50, 90, 80, 65, 95]
+// const maximum = grades.reduce(getMax);
+// const minimum = grades.reduce(getMin);
+// console.log(maximum);
+// console.log(minimum);
 
-function getMax(max, element){
-    return Math.max(max, element);
-}
+// function getMax(max, element){
+//     return Math.max(max, element);
+// }
 
-function getMin(min, element){
-    return Math.min(min, element);
-}
+// function getMin(min, element){
+//     return Math.min(min, element);
+// }
+
+
+
+// arrays of objects below:
+
+
+const fruits = [{name: "apple", color: "red", calories: 95},
+                {name: "bananan", color: "yellow", calories: 105},
+                {name: "guava", color: "green", calories: 76},
+                {name: "mango", color: "yellow", calories: 202},
+                {name: "orange", color: "orange", calories: 62},];
+
+// console.log(fruits[0].color);
+// console.log(fruits[1].color);
+// console.log(fruits[2].color);
+// console.log(fruits[3].color);
+// console.log(fruits[4].color);
+
+// fruits.forEach(fruit => console.log(fruit.color));
+// const fruitNames = fruits.map(fruit => fruit.name);
+// const fruitCals = fruits.map(fruit => fruit.calories);
+// const yellowFruits = fruits.filter(fruit => fruit.color === "yellow");
+// console.log(...fruitNames);
+// console.log(...fruitCals);
+// console.log(...yellowFruits);
+
+const maxFruit = fruits.reduce((max, fruit) => fruit.calories > max.calories ? fruit : max); //max is accumulator and fruit is the current element
+const minFruit = fruits.reduce((min, fruit) => fruit.calories < min.calories ? fruit: min )
+console.log(maxFruit);
+console.log(minFruit);
+
+
+
+
+
+
