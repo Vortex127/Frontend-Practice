@@ -156,12 +156,23 @@ const fruits = [{name: "apple", color: "red", calories: 95},
 // console.log(...fruitCals);
 // console.log(...yellowFruits);
 
-const maxFruit = fruits.reduce((max, fruit) => fruit.calories > max.calories ? fruit : max); //max is accumulator and fruit is the current element
-const minFruit = fruits.reduce((min, fruit) => fruit.calories < min.calories ? fruit: min )
-console.log(maxFruit);
-console.log(minFruit);
+// const maxFruit = fruits.reduce((max, fruit) => fruit.calories > max.calories ? fruit : max); //max is accumulator and fruit is the current element
+// const minFruit = fruits.reduce((min, fruit) => fruit.calories < min.calories ? fruit: min )
+// console.log(maxFruit);
+// console.log(minFruit);
 
 
+
+//learning how to shuffle arrays below using Fisher-Yates algorithm:
+
+const cards = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
+
+function shuffle(array){
+    for (let i = array.length-1; i>0; i--){
+        const random = Math.floor(Math.random()*(i+1));
+        [array[i], array[random]] = [array[random], array[i]];
+    }
+} 
 
 
 
