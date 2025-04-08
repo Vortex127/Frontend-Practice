@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizing Units</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        html{
+            font-size: 12px;
+        }
+
+        .box{
+            box-sizing: border-box; 
+            bottom: 2px solid black;
+            /* width: 2048px; */
+            width: 80vw;
+            height: 10vh;
+            background-color: aquamarine;
+            margin:auto; /* applies equal margins from left and right hence centering the div, only works on block level elements and not on inline elements */
+        }
+
+        .container{
+            box-sizing: border-box; 
+            bottom: 2px solid black;
+            /* width: 2048px; */
+            width: 80vw;
+            height: 80vh;
+            font-size: 15px;
+            background-color: aquamarine;
+            margin: 23px auto; /* 23 is top margin */
+        }
+
+        .container p {
+            /* font-size: 2em; 2em is 2 times the font size of the parent element meaning 30px right now */
+            font-size: 2rem; /* 2rem is 2 times the font size of the root element meaning 24px right now */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        This is a box
+    </div>
+    <div class="container">
+       <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem velit nesciunt harum enim, expedita, saepe accusantium, temporibus possimus nulla esse quas nihil est nostrum. At deleniti libero officiis minima fuga a obcaecati debitis amet harum laborum quo saepe accusamus doloremque pariatur porro corporis, architecto, reiciendis sequi eius voluptatibus aperiam adipisci atque rerum! Perspiciatis eaque voluptatum saepe.
+       </p>
+    </div>
+    <div class="cont">
+        
+    </div>
+</body>
+</html>
