@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Properties</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    .box{
+        border: 2px solid blue;
+        display: inline-block;
+        padding: 45px; /* Top padding, width and margins won't apply properly to inline display */
+        margin: 20px;
+    }
+    </style>
+</head>
+<body>
+    <div class="box">
+        I am a box
+    </div>
+    <div class="box">
+        also a nice box
+    </div>
+
+    <span>I am a good</span>
+    <span> planner </span>
+</body>
+</html>
+
+<!-- This code demonstrates the use of display properties in CSS. The .box class is styled to be an inline-block element, allowing it to have padding and margin while still being displayed inline with other elements. The spans at the end are also inline elements, demonstrating how they can be used in a similar manner. 
+ 
+Inline Block doesn't break onto a new line but still allows for height, width, padding, and margin manipulations unlike inline does -->
