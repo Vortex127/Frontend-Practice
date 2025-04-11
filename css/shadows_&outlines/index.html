@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadows and Outlines</title>
+    <!---! Explain code below? -->
+    <style>
+        .box{
+            border: 2px solid black;
+            padding: 34px;
+            box-shadow: 5px 15px 5px #888897;
+        }
+        .text-shad{
+            text-shadow: 5px 5px 2px red;
+            outline: 2px solid black; /* Outline is not part of the element's box model hence it's padding or any other property isn't applied to the box model */
+            border: 3px solid rebeccapurple
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Box
+    </div>
+    <p class="text-shad">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, neque accusamus magnam illo aspernatur reprehenderit, nostrum illum optio sequi voluptatum impedit nobis natus! Vel voluptates facilis minus quaerat consequatur. Architecto odio natus aliquid earum.
+    </p>
+</body>
+</html>
