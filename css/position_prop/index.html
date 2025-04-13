@@ -68,5 +68,55 @@
 </html>
 
 <!-- Notes below:  -->
-<!-- position: static (default) , relative, absolute, fixed, sticky!
-Now relative works with top, left, right, bottom properties to move the element from its original position.
+<!-- CSS Position Properties:
+1. Static (default):
+   - Element follows normal document flow
+   - Cannot use top, bottom, left, right
+   - Example: .box4
+
+2. Relative:
+   - Positioned relative to its normal position
+   - Can use top, bottom, left, right
+   - Example: 
+     .box2 {
+       position: relative;
+       top: 37px;
+       left: 56px;
+     }
+
+3. Absolute:
+   - Removed from normal flow
+   - Positioned relative to nearest positioned ancestor
+   - If no ancestor, uses document body
+   - Example:
+     .box1 {
+       position: absolute;
+       top: 0px;
+     }
+
+4. Fixed:
+   - Positioned relative to viewport
+   - Stays in place during scrolling
+   - Example:
+     .box3 {
+       position: fixed;
+       bottom: 0px;
+       left: 25vw;
+     }
+
+5. Sticky:
+   - Hybrid of relative and fixed
+   - Relative until scroll threshold, then fixed
+   - Needs threshold (e.g., top: 0)
+   - Example:
+     .box1 {
+       position: sticky;
+       top: 0px;
+     }
+
+Key Points:
+- Use position before top/bottom/left/right
+- Absolute and fixed remove from normal flow
+- Sticky needs scroll threshold
+- Relative moves from original position
+-->
