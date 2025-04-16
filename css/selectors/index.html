@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -53,5 +53,61 @@
     </div>
     <a href="http://www.google.com"> Go to Google </a>
     <a href="http://www.wikipedia.com"> Go to Wikipedia </a>
+</body>
+</html> 
+
+<!-- Below is more deets on selectors-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+    <style>
+        /* .box:first-child{
+            background-color: red;
+        } */
+
+        /* .box::first-line{
+            color: red;
+        } */
+
+        /* .boxes *{
+            color:blue;
+            border: 2px solid black;
+        } */
+
+        .boxes::before{
+            content: "This is before content";
+            color: green;
+        }
+
+        .boxes::after{
+            content: "This is after content";
+            color: sienna;
+        }
+
+        ::selection{
+            color: aqua;
+        }
+
+        .box::first-letter{
+            color: purple;
+            font-size: 34px;
+        }
+
+        input::placeholder{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">Hey I am a box </div>
+        <div class="box"> Hey, I am a box </div>
+        <div class="box"> Hey, I am a box </div>
+        <input type="text" placeholder="Type your name here">
+    </div>
 </body>
 </html>
