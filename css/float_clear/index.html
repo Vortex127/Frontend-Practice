@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float & Clear</title>
+    <style>
+
+        .cards{
+            border: 2px solid black ;
+        }
+
+        img{
+            float:left;
+        }
+
+        .card{
+            border: 2px solid red;
+        }
+
+        .card:nth-child(3){
+            background-color: aqua;
+            clear: left; /* doesn't allow anything to appear on its left */
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiJ8yibvpNMTYl4IvgXWzeJ4DRGRXT_YcaXxE6cUq3r_Wnxrn8wURQNHA&s" width="230px">
+        <div class="card">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut reprehenderit quae reiciendis dolores ipsum optio debitis exercitationem impedit nostrum magni, at deserunt consequatur sed repudiandae nam labore quisquam vel corporis! Rem eius nemo corporis. </p>
+        </div>
+        <div class="card">
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, omnis a provident aut ullam, voluptatibus quae fuga qui eveniet tenetur placeat mollitia facilis doloribus, quas vitae velit suscipit. Dignissimos, ea modi, rerum esse alias totam facere harum, dolorum exercitationem nemo distinctio omnis. Expedita nostrum deleniti quia distinctio quibusdam, quae, quaerat tempora facilis mollitia atque molestias reprehenderit ea officiis error vitae cumque porro ut cum magni quos suscipit iste quisquam! Quia corporis facere commodi laborum saepe suscipit quasi veniam doloribus fugiat repellendus adipisci quod porro doloremque nam rem ex laudantium fuga itaque tempore ab quam, hic, aspernatur ad a. Adipisci suscipit hic eius! Asperiores quia ab tenetur odit reprehenderit? Ea minima velit asperiores reprehenderit dolorum nemo laborum quas aperiam distinctio quo nulla temporibus harum beatae vel delectus, voluptatum sapiente aliquam. Sed doloremque minima commodi laboriosam voluptatum, neque aspernatur eligendi rem a molestias blanditiis earum nam quia beatae delectus excepturi omnis tenetur, totam laborum hic quas, illum libero vitae. Est, unde reiciendis sint sed non quidem minus enim veritatis nam error labore quasi incidunt molestias tempora, perspiciatis libero aliquid placeat? Unde dolorem ratione voluptatibus illo id optio excepturi repudiandae laudantium beatae mollitia culpa voluptas ullam in placeat laboriosam dolore at, esse vitae praesentium, error eius adipisci dicta? Quam ab et, ad iusto beatae cum dolorum eaque earum, placeat labore quidem saepe aliquid! Rerum quis voluptas eligendi odio necessitatibus repudiandae ad veritatis consequuntur, animi ducimus reiciendis, maiores itaque placeat incidunt iure perferendis amet? Harum nulla quibusdam quia laudantium, neque consequuntur? Voluptates, ad architecto fuga commodi aliquam dolor voluptas optio vitae modi nostrum itaque. Quo temporibus reiciendis sapiente, laboriosam repudiandae sit. Aliquam quae aliquid, rem consequuntur reiciendis maiores corrupti qui beatae esse voluptatibus a. Dolor asperiores laudantium sequi molestias fugit ex ducimus rem debitis dicta eligendi quos nisi, ea, nihil cumque, ipsam labore inventore. Eaque quibusdam labore accusantium voluptatibus, in neque molestiae dignissimos architecto! Laudantium aperiam quae maxime, non tempora iusto assumenda eos, perferendis unde nam ratione, similique esse excepturi eum repellendus eveniet ullam eligendi tenetur ab.
+            </p>
+        </div>
+        <div class="card"> Card 3 </div>
+    </div>
+</body>
+</html>
