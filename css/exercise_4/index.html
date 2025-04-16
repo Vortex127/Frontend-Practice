@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;}
+        :root{
+            --bgcolor: rgb(46, 182, 134);
+            --width: 100vw;
+            --height: 10vh;
+            --defpad: 23px;
+            --disptype: flex;
+        }
+
+        .nav{
+            background-color: var(--bgcolor);
+            width: var(--width);
+            height: var(--height);
+        }
+
+        ul{
+            display: var(--disptype);
+        }
+
+        ul li{
+            list-style: none;
+            padding: var(--defpad);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav" >
+        <ul>
+            <li> About </li>
+            <li> Projets </li>
+            <li> Contact Us </li>
+            <li> Blog </li>
+        </ul>
+    </div>
+</body>
+</html>
