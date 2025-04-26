@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Masterclass</title>
+
+    <style>
+        .container{
+            border: 2px solid blue;
+            display: flex;
+            height: 80vh;
+            /* justify-content: center; horizontal alignment */
+            /* align-items: center; vertical alignment */
+            /* flex-direction: column; */
+            flex-wrap: wrap;
+            /* align-content: flex-start;  */
+            flex-flow: row wrap; /* combines flex direction and flex wrap */
+            gap: 30px 10px; /* row-gap first, then column-gap */
+            /* row-gap: 50px;
+            column-gap: 40px; */
+        }
+        .item{
+            height: 92px;
+            width: 92px;
+            border: 2px solid black;
+            /* margin: 4px; */
+            background-color: blueviolet;
+        }
+        .order-1{
+            order: 1;
+        }
+        .order-2{
+            order: 2;
+        }
+        .order-3{
+            order: 3;
+        }
+        .item-1{
+            /* flex-grow: 2; takes up space of two elements */
+            flex-shrink: 2; /* shrinks the element when the screen is small */
+            align-self: flex-end; /* aligns the item to the end of the container */;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="item item-1"> 1</div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <!-- <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div> -->
+            <!-- <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div> -->
+        </div>
+    </main>
+</body>
+</html>
+
+<!-- Notes:
+
+1. Justify content center will work on the basis of main axis. When the flex-direction is row, the main axis is horizontal. So justify-content: center will center the items horizontally, and when the flex-direction is column, the main axis is vertical. So justify-content: center will center the items vertically.
+
+2. If we have only one line and elements aren't showing on the new line then we only use align items center. But if we have multiple lines and we want to center the items in the container, we can use align-content center.
+
+3. order works in ascending order, biggest number last
+ -->
