@@ -1,4 +1,4 @@
-// basics below!!
+// // basics below!!
 
 // console.log(`Hello`);
 // console.log(`I like pizza!`);
@@ -64,7 +64,7 @@
 // console.log(y, typeof y);
 // console.log(z, typeof z);
 
-//constants vs let discussed!!
+// constants vs let discussed!!
 
 // const PI = 3.14159;
 // let radius;
@@ -77,11 +77,11 @@
 //     document.getElementById("myH3").textContent = circum + "cm";
 // }
 
-//Exploring the Math Operator
+// Exploring the Math Operator
 
-let x = 5.87;
-let y = 3;
-let z;
+// let x = 5.87;
+// let y = 3;
+// let z;
 
-z = Math.round(x);
-console.log(z);
+// z = Math.round(x);
+// console.log(z);
