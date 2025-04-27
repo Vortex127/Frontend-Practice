@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Design</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .nav{
+            background-color: rgb(226, 11, 205);
+            height: 6vh;
+            position: sticky;
+            top: 0px;
+            /* z-index: 1; */
+        }
+        ul{
+            list-style: none;
+        }
+
+        li{
+            display: inline;
+            padding: 23px;
+        }
+
+        .outer{
+            padding: 10px;
+        }
+
+        .inner{
+            background-color: green;
+            height: 60vh;
+            width: 95vw;
+            padding: 20px;
+
+        }
+        .box1{
+            background-color: pink;
+            height: 55vh;
+            width: 30%;
+            float: left;
+            margin-left: 30vh;
+        }
+
+        .box2{
+            background-color: aqua;
+            height: 55vh;
+            width: 30%;
+            float: right;
+            margin-right: 30vh;
+        }
+
+       .welcome{
+            background-color: transparent;
+            width: 80%;
+            margin: 20px 10vh 50px 13vh; /* top, right, bottom, left */
+            border: 2px solid black;
+            border-radius: 25px;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .logo img{
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+
+        .logo{
+            position: fixed;
+            bottom: 6vh;
+            right: 20px;
+            z-index: 1;
+        }
+
+        .footer{
+            background-color: rgb(226, 11, 205);
+            height: 6vh;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    
+    <div class="outer">
+        <div class="inner">
+            <div class="box1"></div>
+            <div class="box2"></div>
+        </div>
+    </div>
+    
+    <div class="welcome">
+        Welcome to Sigma Web Dev Express
+    </div>
+
+    <div class="logo">
+        <img src="ahmed.png" alt="img not found">
+    </div>
+
+    <div class="footer">
+        <ul>
+            <li>Copyright</li>
+            <li> About Us </li>
+            <li> Haiya Hoo </li>
+        </ul>
+    </div>
+</body>
+</html>
