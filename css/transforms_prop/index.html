@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transforms</title>
+    <style>
+
+        /* *{
+            margin: 0;
+            padding: 0;
+        } */
+        .box{
+            height: 50px;
+            width: 50px;
+            background-color: beige;
+            border: 2px solid black;
+            /* transform: rotate(40deg); */
+            transform: rotate(55deg);  /* 1turn = 360 degrees */
+            /* transform: rotateX(40deg); disappears at 90 because of perspective 
+            transform: rotateZ(100deg);  */
+            /* transform: scaleX(6); */
+            /* transform: scaleY(2); scaleX and scaleY are independent of each other meaning scaleY will not affect scaleX and vice versa */
+            /* transform: scale3d(2,2,0.5); scale3d takes 3 values where x is scaled to 2, y is scaled to 2, and reduced to half size in z
+            transform: skew(10deg, 25deg); skewX and skewY are independent of each other meaning skewY will not affect skewX and vice versa. Also skew isn't applicable on z-axis */
+            /* transform: translate(200px,200px); translate takes 2 values x and y, x value moves from right(+ve vals) to left(-ve vals) and y value moves from top(-ve vals) to bottom(+ve vals) */
+            /* transform: translateY(100%) translateX(100%); */
+            /* transform: translateX(100%) skewX(40deg) translateX(45%); */
+            transform-origin: -0% -0%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container{
+            width: 100vw;
+            height: 80vh;
+            border: 2px solid purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+</body>
+</html>
