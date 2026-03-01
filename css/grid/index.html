@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+
+/* space between two parallel lines is called grid track e.g. single column or row */
+
+/* space between two perpendicular lines is called grid area e.g. 2x2 matrix */
+
+        .container{
+            border: 2px solid black;
+            display: grid;
+            /* grid-template-columns: [first] 120px [second] 100px [t] 100px; /* creates two named columns of different sizes that can be played with to tweak the eleements on screen */
+            /* grid-template-rows: 100px 100px 100px; */
+            grid-template-areas: "nav nav nav"
+                                 "sidebar article article"
+                                 "footer footer footer";
+        }
+
+        .items{
+            border: 2px solid red;
+            height: 55px;
+        }
+
+        .item-1{
+            grid-area: nav;
+        }
+
+        .item-2{
+            grid-area: sidebar;
+        }
+
+        .item-3{
+            grid-area: article;
+        }
+
+        .item-4{
+            grid-area: footer;
+        }
+
+        /* .item-5{
+            grid-area: footer;
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items item-1">1</div>
+        <div class="items .item-2">2</div>
+        <div class="items .item-3">3</div>
+        <div class="items item-4">4</div>
+        <div class="items .item-5">5</div>
+    </div>
+</body>
+</html>
