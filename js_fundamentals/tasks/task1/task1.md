@@ -1,0 +1,1 @@
+checked what prompt alert and confirm do

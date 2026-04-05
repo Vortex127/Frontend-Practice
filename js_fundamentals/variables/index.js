@@ -25,7 +25,7 @@ let Country = "Pakistan";
 
 // type conversions!!
 
-let age = window.prompt("How old are you? ");
+let age = prompt("How old are you? ");
 age = Number(age); // now it works normally
 age+=1; //appends 1 to the input instead of adding 1 to the number
 console.log(age, typeof age);
